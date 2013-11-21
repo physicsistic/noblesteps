@@ -21,5 +21,9 @@ Reveal.initialize({
 
 $('.js-answer').on('click', function(event) {
   event.preventDefault();
-  Reveal.next();
+  if ($(this).hasClass('js-last')) {
+    window.location = "index.html";
+  } else {
+    Reveal.next();    
+  }
 });
