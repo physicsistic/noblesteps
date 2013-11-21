@@ -1214,3 +1214,19 @@
 	width: 100%;
 	height: 500px;
 }
+
+.drawpaths{
+	margin-top: -3%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.drawpaths-title h1{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 2%;
+}
+
+.drawpaths input{
+}
