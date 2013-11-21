@@ -122,7 +122,7 @@ var timeline = {
                         "text":"<p>Our appeals process, after two more years of waiting, finally is upheld. We are given the opportunity to appeal once more, but at this point we have no money, resources, or the energy for another go at the legal process.</br>The timeframe for DACA eligibility is announced at June 15, 2012, rendering my sister and I ineligible for a work permit or a driver's license--just by two weeks.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/final-rejection.png",
+                            "media":"images/final-rejection.jpg",
                             "caption":""
                         }
                     }           
