@@ -24,6 +24,17 @@ var timeline = {
                     },
                     
                     {
+                        "startDate":"2001,09,11",
+                        "headline":"9/11",
+                        "text":"<p>Terrorist attacks in New York results in a strict immigration system for a more secure homeland, delaying all current and future application processes.</p>",
+                        "asset": {
+                            "media":"images/911.jpg",
+                            "caption":"",
+                            "credit": "@beni9130"
+                        }
+                    },
+                    
+                    {
                         "startDate":"2002,01,10",
                         "endDate":"2010,04,01",
                         "headline":"Applied for Green Card",
@@ -35,6 +46,31 @@ var timeline = {
                         }        
                     },
                     
+                    {
+                        "startDate":"2007,10,10",
+                        "headline":"Got a California ID",
+                        "text":"<p>This ID unfortunately expired too quickly and my only legal form of ID left afterwards was my passport.</p>",
+                        "classname":"optionaluniqueclassnamecanbeaddedhere",
+                        "asset": {
+                            "media":"images/passport.jpg",
+                            // "caption":"This is a stock photo."
+                            "credit": "via Google"
+                        }        
+                    },
+                    
+                    
+                    {
+                        "startDate":"2008,01,01",
+                        "headline":"Enrolled at a local community college",
+                        "text":"<p>De Anza College was my source of empowerment and inspiration to begin activism for not only immigrant communities but for queers, Asian Pacific Islanders, and for sustainable funding for higher education.</p>",
+                        "classname":"optionaluniqueclassnamecanbeaddedhere",
+                        "asset": {
+                            "media":"images/deanza.jpg",
+                            // "caption":"This is a stock photo."
+                            "credit": "via Google"
+                        }        
+                    },
+
                     {
                         "startDate":"2011,04,01",
                         "headline":"Green card application rejection",
@@ -96,8 +132,9 @@ var timeline = {
 
 createStoryJS({
   type:       'timeline',
-  width:      '1100',
+  width:      '100%',
   height:     '600',
+  start_zoom_adjust:  2,
   source:     timeline,
   embed_id:   'vis'
 });
