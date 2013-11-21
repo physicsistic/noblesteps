@@ -42,7 +42,7 @@ var timeline = {
                         "classname":"optionaluniqueclassnamecanbeaddedhere",
                         "asset": {
                             "media":"images/passport.jpg",
-                            "caption":"This is a stock photo."
+                            "credit":"Via Google"
                         }        
                     },
                     
@@ -52,10 +52,10 @@ var timeline = {
                         "text":"<p>This ID unfortunately expired too quickly and my only legal form of ID left afterwards was my passport.</p>",
                         "classname":"optionaluniqueclassnamecanbeaddedhere",
                         "asset": {
-                            "media":"images/passport.jpg",
+                            "media":"images/korean-passport.jpg",
                             // "caption":"This is a stock photo."
-                            "credit": "via Google"
-                        }        
+                            "caption": "My only form of ID."
+                        }
                     },
                     
                     
@@ -77,8 +77,8 @@ var timeline = {
                         "text":"<p>Green card sponsors were not eligible to sponsor us due to their reported income level. (Their actual income level was higher, but they reported less to pay less taxes.)</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/passport.jpg",
-                            "caption":"This is a stock photo."
+                            "media":"images/app-rejection.jpg",
+                            "credit":"via Google"
                         }
                     },
                     
@@ -89,8 +89,8 @@ var timeline = {
                         "text":"<p>We file an appeal for the green card application, gathering as many documents as we can to prove that our sponsors did indeed have sufficient income.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/passport.jpg",
-                            "caption":""
+                            "media":"images/gavel.jpg",
+                            "credit":"via Google"
                         }
                     },
                     
@@ -100,7 +100,7 @@ var timeline = {
                         "text":"<p>To avoid becoming out of status, my father enrolls in a college in Oakland. My sister and I automatically attain a dependent student visa F-2.</p>",
                         "classname":"optionaluniqueclassnamecanbeaddedhere",
                         "asset": {
-                            "media":"images/passport.jpg",
+                            "media":"images/so-dad.jpg",
                             "caption":""
                         }
                     },
@@ -111,7 +111,7 @@ var timeline = {
                         "text":"<p>He does not file for OPT and subsequently both his daughters who are under a dependent visa, become out of status.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/passport.jpg",
+                            "media":"images/sarah.jpg",
                             "caption":""
                         }
                     },
@@ -122,7 +122,7 @@ var timeline = {
                         "text":"<p>Our appeals process, after two more years of waiting, finally is upheld. We are given the opportunity to appeal once more, but at this point we have no money, resources, or the energy for another go at the legal process.</br>The timeframe for DACA eligibility is announced at June 15, 2012, rendering my sister and I ineligible for a work permit or a driver's license--just by two weeks.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/passport.jpg",
+                            "media":"images/final-rejection.jpg",
                             "caption":""
                         }
                     }           
