@@ -24,6 +24,18 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+		
+    <style>
+    #holder { border: 10px dashed #ccc; width: 300px; min-height: 300px; margin: 20px auto;}
+    #holder.hover { border: 10px dashed #0c0; }
+    #holder img { display: block; margin: 10px auto; }
+    #holder p { margin: 10px; font-size: 14px; }
+    progress { width: 100%; }
+    progress:after { content: '%'; }
+    .fail { background: #c00; padding: 2px; color: #fff; }
+    .hidden { display: none !important;}
+    </style>		
+		
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
 	<body class="no-sidebar">
@@ -66,42 +78,95 @@
 			</div>
 		<!-- /Header Wrapper -->
 		
-		<!-- Highlights Wrapper -->
-			<div class="wrapper wrapper-style3">
-				<div class="title">Draw Paths</div>
-				<div class="container drawpaths">
-						<div class="drawpaths-title"><h1>Tell us your story</h1></div>
-						<form role="form">
-						<div class="group">
-							<div class="drawpaths-date">
-								<label for="dateId">Date of event</label>
-								<input type="text" id="dateId" class="form-control input-lg" placeholder="e.g. 01/01/1999 or 01-01-1999">
-							</div>
-							<div class="drawpaths-eventname">
-								<label for="eventName" >Event title</label>
-								<input type="text" id="eventName" class="form-control input-lg" placeholder="e.g. Entered U.S. on Student Visa">
-							</div>
-						</div> <!-- one row -->
-							<div class="drawpaths-eventdetail ">
-								<label for="eventDetail">Event detail</label>
-								<textarea id="eventDetail" class="form-control input-lg" rows="2" placeholder="e.g. Today was the first day I set foot on this country. I came with my parents and my siblings; I was 14 years old."></textarea>
-							</div>
-							<div class="drawpaths-media">
-								<label for="eventMedia">Link attachments</label>
-								<input type="url" id="eventMedia" class="form-control input-lg" placeholder="e.g. Twitter status, image link, or video link.">
-							</div>
-							<div class="drawpaths-new">
-								<button type="button" id="eventNew" class="btn btn-info">Add Event</button>
-							</div>
-							<div class="drawpaths-submit">
-								<button type="button" id="eventSubmit" class="btn btn-success">Submit</button>
-							</div>
-							<!-- </fieldset> -->
-						</form>
-					</div>
-				</div>
-			</div>
-		<!-- /Highlights Wrapper -->
+      <div class="wrapper wrapper-style3">
+        <div class="title">Where were you born?</div>
+        <br />
+        <br />
+        <div class="container drawpaths">
+          <form role="from">
+            <div class="form-group">
+              <select class="form-control">
+                <option selected>Afghanistan</option>
+                <option>China</option>
+                <option>Columbia</option>
+                <option>Denmark</option>
+                <option>Ecuador</option>
+                <option>France</option>
+                <option>Mexico</option>
+                <option>Nepal</option>
+                <option>Pakistan</option>
+                <option>Spain</option>
+                <option>Syria</option>
+                <option>Turkey</option>
+              </select>            
+            </div>
+          </form>            
+        </div>
+      </div>
+
+      <div class="wrapper wrapper-style1">
+        <div class="title">Status</div>
+        <div class="container drawpaths">
+          <form role="from">
+            <div class="form-group">
+              <div class="radio">
+                <label style="color: #fff; font-size: 30px; margin: 30px;">
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  Undocumented
+                </label>
+              </div>
+              <div class="radio">
+                <label style="color: #fff; font-size: 30px; margin: 30px;">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Visa
+                </label>
+              </div>            
+              <div class="radio">
+                <label style="color: #fff; font-size: 30px; margin: 30px;">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Green card
+                </label>
+              </div>            
+              <div class="radio">
+                <label style="color: #fff; font-size: 30px; margin: 30px;">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Citizen
+                </label>
+              </div>            
+            </div>
+          </form>            
+        </div>
+      </div>
+
+      <div class="wrapper wrapper-style2" style="display: block">
+        <div class="title">Add items to your timeline</div>
+        <div class="container drawpaths">
+          <form role="from" id="add-event">
+            <div class="form-group">
+              <label>Caption:</label> <input type="text" class="form-control" placeholder="Title" style="width: 100%; height: 50px">
+              <label>Description:</label> <input type="text" class="form-control" placeholder="Tell us what happened" style="width: 100%; height: 50px">
+              <label>Image:</label> <div id="holder"></div>
+            </div>
+          </form>    
+          
+          <div id="more-events">
+          </div>
+          
+          <br/>
+          
+          <div style="text-align: center;">
+            <button type="button" class="btn btn-default" style="margin-right: 10px" onclick="$('#add-event').clone().appendTo($('#more-events'))">Add</button>
+            <button type="button" class="btn btn-primary" style="margin-left: 10px" onclick="window.location='vis.html';">Done!</button>
+          </div>
+                  
+        </div>
+      </div>
+
+      <p id="filereader">File API &amp; FileReader API not supported</p>
+      <p id="formdata">XHR2's FormData is not supported</p>
+      <p id="progress">XHR2's upload progress isn't supported</p>
+
+      <script src="js/drag-drop.js"></script>
 
 	</body>
 </html>
