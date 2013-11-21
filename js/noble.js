@@ -100,7 +100,7 @@ var timeline = {
                         "text":"<p>To avoid becoming out of status, my father enrolls in a college in Oakland. My sister and I automatically attain a dependent student visa F-2.</p>",
                         "classname":"optionaluniqueclassnamecanbeaddedhere",
                         "asset": {
-                            "media":"images/so-dad.jpg",
+                            "media":"images/so-dad.png",
                             "caption":""
                         }
                     },
@@ -111,7 +111,7 @@ var timeline = {
                         "text":"<p>He does not file for OPT and subsequently both his daughters who are under a dependent visa, become out of status.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/sarah.jpg",
+                            "media":"images/sarah.png",
                             "caption":""
                         }
                     },
@@ -122,7 +122,7 @@ var timeline = {
                         "text":"<p>Our appeals process, after two more years of waiting, finally is upheld. We are given the opportunity to appeal once more, but at this point we have no money, resources, or the energy for another go at the legal process.</br>The timeframe for DACA eligibility is announced at June 15, 2012, rendering my sister and I ineligible for a work permit or a driver's license--just by two weeks.</p>",
                         "classname":"rejection",
                         "asset": {
-                            "media":"images/final-rejection.jpg",
+                            "media":"images/final-rejection.png",
                             "caption":""
                         }
                     }           
